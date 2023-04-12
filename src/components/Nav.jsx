@@ -27,8 +27,8 @@ const Nav = () => {
             <a href="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
             </a>
+            <span className="cart__length">2</span>
           </li>
-          <span className="cart__length">2</span>
         </ul>
         <div className="menu__backdrop">
           <button className="btn__menu btn__menu--close">
