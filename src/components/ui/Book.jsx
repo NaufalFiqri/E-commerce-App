@@ -6,15 +6,15 @@ const Book = ({ book }) => {
 
   return (
     <div className="book">
-      <Link to="/">
+      <a href="/books/1">
         <figure className="book_img--wrapper">
           <img src={book.url} alt="" className="book__img" />
         </figure>
-      </Link>
+      </a>
       <div className="book__title">
-        <Link to="/" className="book__title--link">
+        <a href="/books/1" className="book__title--link">
           {book.title}
-        </Link>
+        </a>
       </div>
       <div className="book__ratings">
         {

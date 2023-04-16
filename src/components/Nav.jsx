@@ -15,27 +15,27 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav__container">
-        <Link to="/">
+        <a href="/">
           <img src={LibraryLogo} alt="" className="logo" />
-        </Link>
+        </a>
         <ul className="nav__links">
           <li className="nav__list">
-            <Link to="/" className="nav__link">
+            <a href="/" className="nav__link">
               Home
-            </Link>
+            </a>
           </li>
           <li className="nav__list">
-            <Link to="/books" className="nav__link nav__link--primary">
+            <a href="/books" className="nav__link nav__link--primary">
               Books
-            </Link>
+            </a>
           </li>
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">
-            <Link to="/cart" className="nav__link">
+            <a href="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
-            </Link>
+            </a>
             <span className="cart__length">2</span>
           </li>
         </ul>
@@ -45,19 +45,19 @@ const Nav = () => {
           </button>
           <ul className="menu__links">
             <li className="menu__list">
-              <Link to="/" className="menu__link">
+              <a href="/" className="menu__link">
                 Home
-              </Link>
+              </a>
             </li>
             <li className="menu__list">
-              <Link to="/" className="menu__link">
+              <a href="/" className="menu__link">
                 Books
-              </Link>
+              </a>
             </li>
             <li className="menu__list">
-              <Link to="/" className="menu__link">
+              <a href="/" className="menu__link">
                 Cart
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
