@@ -11,6 +11,10 @@ import { books } from "./data";
 function App() {
   const [cart, setCart] = useState([]);
 
+  function addToCart() {
+    console.log('add to cart')
+  }
+
   return (
     <Router>
       <div className="App">
@@ -18,7 +22,7 @@ function App() {
         <Nav />
         <Route path="/" exact component={Home} />
         <Route path="/books" exact render={() => <Books books={books} />} />
-        <Route path="/books/:id" render={() => <BookInfo books={books} />} />
+        <Route path="/books/:id" render={() => <BookInfo books={books} addToCart={addToCart} />} />
         <Route path="/cart" render={() => <Cart books={books} />} />
         <Footer />
       </div>
