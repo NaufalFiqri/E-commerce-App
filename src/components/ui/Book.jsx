@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import React from "react";
 import Rating from "./Rating";
